@@ -9,7 +9,6 @@ Hanya terdiri dari satu file utama (`index.html`) yang merepresentasikan impleme
 - Pengembang: Faisal (mahasiswa Teknik Informatika)  
 - Bahasa/teknologi:  
   - HTML (100%) — seluruh kode sumber berupa file HTML. :contentReference[oaicite:1]{index=1}  
-  - (Jika ada CSS eksternal atau framework: tambahkan di sini)  
 - Fungsi utama: menampilkan halaman web statis yang menjadi hasil tugas akhir PPW.
 
 ## 📂 Struktur Repo

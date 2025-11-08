@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechCorp — Solusi Digital yang Gesit</title>
+  <meta name="description" content="Landing page responsif untuk perusahaan teknologi: fitur, profil singkat, dan formulir kontak." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7 text-indigo-600"><path d="M11.999 2a1 1 0 0 1 .894.553l8 16A1 1 0 0 1 20 20H4a1 1 0 0 1-.894-1.447l8-16A1 1 0 0 1 12 2z"/><path d="M12 9a1 1 0 0 1 .894.553l4 8A1 1 0 0 1 16 19H8a1 1 0 0 1-.894-1.447l4-8A1 1 0 0 1 12 9z" class="opacity-40"/></svg>
+          <span class="text-lg font-bold tracking-tight">TechCorp</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8 font-medium text-slate-700">
+          <a href="#beranda" class="hover:text-indigo-600">Beranda</a>
+          <a href="#fitur" class="hover:text-indigo-600">Fitur</a>
+          <a href="#tentang" class="hover:text-indigo-600">Tentang</a>
+          <a href="#kontak" class="hover:text-indigo-600">Kontak</a>
+          <a href="#kontak" class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Coba Demo</a>
+        </nav>
+
+        <!-- Mobile button -->
+        <button id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-label="Buka menu">
+          <svg id="menuIcon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          <svg id="closeIcon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white" role="dialog" aria-label="Menu">
+      <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6">
+        <nav class="flex flex-col gap-3 text-slate-700">
+          <a href="#beranda" class="py-2 hover:text-indigo-600">Beranda</a>
+          <a href="#fitur" class="py-2 hover:text-indigo-600">Fitur</a>
+          <a href="#tentang" class="py-2 hover:text-indigo-600">Tentang</a>
+          <a href="#kontak" class="py-2 hover:text-indigo-600">Kontak</a>
+          <a href="#kontak" class="mt-2 inline-flex w-max items-center rounded-xl bg-indigo-600 px-4 py-2 text-white shadow hover:bg-indigo-700">Coba Demo</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="beranda">
+    <section class="relative overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
+      <div class="mx-auto max-w-7xl px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:py-24">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Bangun Produk Lebih Cepat, Skalakan Tanpa Drama</h1>
+            <p class="mt-4 text-lg text-slate-600">Platform modern untuk tim yang ingin meluncurkan fitur dengan aman, memantau performa real-time, dan memuaskan pelanggan tanpa membakar server.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#kontak" class="inline-flex items-center rounded-xl bg-indigo-600 px-6 py-3 text-white shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Mulai Konsultasi</a>
+              <a href="#fitur" class="inline-flex items-center rounded-xl border border-slate-300 px-6 py-3 text-slate-700 hover:bg-slate-50">Lihat Fitur</a>
+            </div>
+            <p class="mt-6 text-sm text-slate-500">Dipercaya oleh startup gesit dan perusahaan mapan.</p>
+          </div>
+          <div class="relative">
+            <div class="relative rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop" alt="Tim teknologi berkolaborasi" class="h-72 w-full rounded-xl object-cover sm:h-96">
+              <div class="absolute inset-x-6 -bottom-6 rounded-xl bg-white p-4 shadow ring-1 ring-slate-200">
+                <div class="flex items-center gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-indigo-600"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>
+                  <p class="text-sm text-slate-700"><span class="font-semibold">Status sistem:</span> 99.98% uptime bulan ini</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,64L48,74.7C96,85,192,107,288,112C384,117,480,107,576,90.7C672,75,768,53,864,58.7C960,64,1056,96,1152,101.3C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" fill="#eef2ff"/></svg>
+    </section>
+
+    <section id="fitur" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Fitur Unggulan</h2>
+          <p class="mt-3 text-slate-600">Tiga hal yang membuat produk Anda melaju tanpa nge-lag.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M12 22a1 1 0 0 1-1-1v-7H7l5-12 5 12h-4v7a1 1 0 0 1-1 1Z"/></svg>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Deploy Cepat</h3>
+            <p class="mt-2 text-slate-600">Pipeline CI/CD siap pakai untuk rilis harian, rollback instan, dan audit lengkap.</p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M3 12a9 9 0 1 0 9-9v9Z"/><path d="M12 12h9a9 9 0 0 1-9 9Z" class="opacity-60"/></svg>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Analitik Real‑time</h3>
+            <p class="mt-2 text-slate-600">Dashboard metrik dan alert berbasis anomali agar insiden ketahuan sebelum viral.</p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M4 4h16v6H4z"/><path d="M2 10h20v10H2z" class="opacity-60"/></svg>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Keamanan Terintegrasi</h3>
+            <p class="mt-2 text-slate-600">Proteksi API, enkripsi, dan pengetesan otomatis agar data klien tetap aman.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Tentang Perusahaan</h2>
+            <p class="mt-4 text-slate-700">Kami adalah tim engineer dan desainer yang percaya pada software yang cepat, aman, dan menyenangkan dipakai. Selama 7+ tahun, kami membantu klien merancang, membangun, dan menskalakan produk digital dengan praktik modern.</p>
+            <ul class="mt-6 space-y-3 text-slate-700">
+              <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-indigo-100 text-indigo-600">✓</span> Partner teknologi dari konsep hingga produksi.</li>
+              <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-indigo-100 text-indigo-600">✓</span> Dokumentasi rapi dan transfer knowledge ke tim Anda.</li>
+              <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-indigo-100 text-indigo-600">✓</span> SLA jelas, dukungan ramah, dan roadmap berkelanjutan.</li>
+            </ul>
+          </div>
+          <div class="relative">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="grid grid-cols-2 gap-6">
+                <div class="rounded-xl bg-indigo-50 p-6 text-center">
+                  <p class="text-3xl font-extrabold text-indigo-700">120+</p>
+                  <p class="mt-1 text-sm text-slate-600">Proyek selesai</p>
+                </div>
+                <div class="rounded-xl bg-indigo-50 p-6 text-center">
+                  <p class="text-3xl font-extrabold text-indigo-700">7 th</p>
+                  <p class="mt-1 text-sm text-slate-600">Pengalaman</p>
+                </div>
+                <div class="rounded-xl bg-indigo-50 p-6 text-center">
+                  <p class="text-3xl font-extrabold text-indigo-700">99.98%</p>
+                  <p class="mt-1 text-sm text-slate-600">Uptime rata-rata</p>
+                </div>
+                <div class="rounded-xl bg-indigo-50 p-6 text-center">
+                  <p class="text-3xl font-extrabold text-indigo-700">24/7</p>
+                  <p class="mt-1 text-sm text-slate-600">Dukungan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Hubungi Kami</h2>
+          <p class="mt-3 text-slate-600">Isi formulir di bawah ini. Balasan biasanya kurang dari 24 jam kerja.</p>
+        </div>
+
+        <div class="mx-auto mt-10 max-w-3xl">
+          <form action="#" method="post" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm" onsubmit="event.preventDefault(); document.getElementById('formAlert').classList.remove('hidden'); this.reset();">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label for="nama" class="mb-2 block text-sm font-medium text-slate-700">Nama</label>
+                <input id="nama" name="nama" type="text" required class="block w-full rounded-xl border-slate-300 px-4 py-3 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Nama lengkap" />
+              </div>
+              <div>
+                <label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email</label>
+                <input id="email" name="email" type="email" required class="block w-full rounded-xl border-slate-300 px-4 py-3 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="email@perusahaan.com" />
+              </div>
+            </div>
+            <div class="mt-6">
+              <label for="perusahaan" class="mb-2 block text-sm font-medium text-slate-700">Perusahaan</label>
+              <input id="perusahaan" name="perusahaan" type="text" class="block w-full rounded-xl border-slate-300 px-4 py-3 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Nama perusahaan (opsional)" />
+            </div>
+            <div class="mt-6">
+              <label for="pesan" class="mb-2 block text-sm font-medium text-slate-700">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="5" required class="block w-full rounded-xl border-slate-300 px-4 py-3 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Ceritakan kebutuhan Anda"></textarea>
+            </div>
+            <div class="mt-6 flex items-start gap-3">
+              <input id="setuju" name="setuju" type="checkbox" required class="mt-1 h-5 w-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" />
+              <label for="setuju" class="text-sm text-slate-600">Saya setuju dengan <a href="#" class="text-indigo-600 underline">kebijakan privasi</a>.</label>
+            </div>
+            <div class="mt-6">
+              <button type="submit" class="inline-flex w-full items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-white shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:w-auto">Kirim Pesan</button>
+            </div>
+            <p id="formAlert" class="mt-4 hidden rounded-xl bg-green-50 p-3 text-sm text-green-700 ring-1 ring-green-200">Terima kasih! Pesan Anda sudah tercatat.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+        <p class="text-sm text-slate-500">© <span id="year"></span> TechCorp. All rights reserved.</p>
+        <div class="flex items-center gap-4 text-slate-500">
+          <a href="#" aria-label="Twitter" class="hover:text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M22 5.92a8.12 8.12 0 0 1-2.36.65 4.1 4.1 0 0 0 1.8-2.26 8.21 8.21 0 0 1-2.6 1 4.1 4.1 0 0 0-7 3.74A11.65 11.65 0 0 1 3.15 4.6a4.1 4.1 0 0 0 1.27 5.48 4.06 4.06 0 0 1-1.86-.52v.05a4.1 4.1 0 0 0 3.29 4 4.1 4.1 0 0 1-1.85.07 4.11 4.11 0 0 0 3.83 2.84A8.24 8.24 0 0 1 2 18.57 11.62 11.62 0 0 0 8.29 20c7.55 0 11.68-6.25 11.68-11.68 0-.18 0-.36 0-.54A8.35 8.35 0 0 0 22 5.92Z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.67-1.27 2.3-2.6 4.74-2.6C21.46 7.6 24 10 24 14.3V24h-5v-8.6c0-2.06-.04-4.72-2.88-4.72-2.88 0-3.32 2.25-3.32 4.57V24H8z"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="hover:text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2c-3.34.73-4-1.61-4-1.61a3.15 3.15 0 0 0-1.34-1.76c-1.1-.75.08-.73.08-.73A2.5 2.5 0 0 1 6 18.07a2.53 2.53 0 0 0 3.44 1 2.5 2.5 0 0 1 .75-1.58c-2.67-.3-5.47-1.34-5.47-5.95A4.66 4.66 0 0 1 6 7.33a4.32 4.32 0 0 1 .12-3.19s1-.32 3.3 1.23a11.3 11.3 0 0 1 6 0C17.72 4 18.71 4.14 18.71 4.14a4.31 4.31 0 0 1 .12 3.19 4.66 4.66 0 0 1 1.23 3.21c0 4.62-2.8 5.65-5.48 5.95a2.82 2.82 0 0 1 .8 2.19v3.25c0 .32.22.69.82.58A12 12 0 0 0 12 .5Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
